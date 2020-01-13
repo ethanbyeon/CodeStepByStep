@@ -10,10 +10,8 @@ class countWords {
         
         int count = 0;
 
-        char[] c = new char[s.length()];
         for(int i = 0; i < s.length(); i++){
-            c[i] = s.charAt(i);
-            if((i > 0) && (c[i] != ' ') && (c[i - 1] == ' ') || ((c[0] != ' ') && (i == 0))) {
+            if(((i == 0) && (s.charAt(i) != ' ')) || ((i > 0) && (s.charAt(i) != ' ') && (s.charAt(i - 1) == ' '))){
                 count++;
             }
         }
