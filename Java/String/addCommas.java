@@ -7,12 +7,13 @@ class addCommas {
     }
 
     static String ac(String x) {
+        
         String n = x;
         String r = "";
 
-        while(true) {
+        while(true){
 
-            if(n.length() <= 3) {
+            if(n.length() <= 3){
                 r = n + r;
                 break;
             }
@@ -20,6 +21,7 @@ class addCommas {
             String temp = n.substring(n.length() - 3);
             r = "," + temp + r;
             n = n.substring(0, n.length() - 3);
+
         }
 
         return r;
