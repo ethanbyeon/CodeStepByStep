@@ -7,7 +7,7 @@ class convertToAltCaps {
     }
 
     static String ctoAlt(String x) {
-        
+
         String r = "";
         x = x.toLowerCase();
 

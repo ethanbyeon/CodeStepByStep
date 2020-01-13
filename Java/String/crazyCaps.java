@@ -7,6 +7,7 @@ class crazyCaps {
     }
 
     static String ccaps(String s) {
+        
         String r = "";
 
         for(int i = 0; i < s.length(); i++){
