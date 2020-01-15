@@ -1,6 +1,6 @@
 package Java.String;
-import java.util.*;
 
+import java.util.*;
 
 class CaesarCipher {
 
