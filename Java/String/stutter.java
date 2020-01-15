@@ -7,6 +7,7 @@ class stutter {
     }
 
     static String stut(String s) {
+        
         String r = "";
 
         for(int i = 0; i < s.length(); i++){
