@@ -1,6 +1,6 @@
 package Java.String;
 
-class reverseChuncks {
+class reverseChunks {
 
     public static void main(String[] args) {
         System.out.println(rchunks("MehranSahami", 3));
