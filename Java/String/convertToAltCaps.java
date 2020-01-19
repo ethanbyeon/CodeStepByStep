@@ -6,18 +6,24 @@ class convertToAltCaps {
         System.out.println(ctoAlt("Summer is here!"));
     }
 
-    static String ctoAlt(String x) {
+    static String ctoAlt(String s) {
 
         String r = "";
-        x = x.toLowerCase();
+        s = s.toLowerCase();
 
-        for(int i = 0; i < x.length(); i++){
-            int n = x.charAt(i);
-
-            if(i % 2 != 0) n -= 32;
-            if(x.charAt(i) == ' ')  ;
-
-            r += (char)(n) + "";            
+        if(s.length() == 0) return "";
+        
+        int cap = 0;
+        for(int i = 0; i < s.length(); i++){
+            if(s.charAt(i) == ' '){
+                r += " ";
+            }else if(cap == 0) {
+                r += s.charAt(i);
+                cap++;
+            }else if(cap == 1){
+                r += s.substring(i, i + 1).toUpperCase();
+                cap--;
+            }
         }
 
         return r;
