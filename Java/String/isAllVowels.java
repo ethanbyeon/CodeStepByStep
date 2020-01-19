@@ -3,35 +3,21 @@ package Java.String;
 class isAllVowels {
 
     public static void main(String[] args) {
-        System.out.println(allVowels("eiEIo"));
+        System.out.println(allVowels("obama"));
     }
 
     static boolean allVowels(String s) {
         
-        boolean bool = true;
+        boolean bool = false;
 
+        int check = 0;
         for(int i = 0; i < s.length(); i++){
-            switch(s.charAt(i)){
-                case 'a':
-                    bool = true;
-                    break;
-                case 'e':
-                    bool = true;
-                    break;
-                case 'i':
-                    bool = true;
-                    break;
-                case 'o':
-                    bool = true;
-                    break;
-                case 'u':
-                    bool = true;
-                    break;
-                default:
-                    continue;
-            }
+            String c = "" + s.charAt(i);
+            if(c.equalsIgnoreCase("a") || c.equalsIgnoreCase("e") || c.equalsIgnoreCase("i") 
+                || c.equalsIgnoreCase("o") || c.equalsIgnoreCase("u")) check++;
+            else check = 0;
         }
-        return bool;
+        return check == s.length();
     }
 
 }
