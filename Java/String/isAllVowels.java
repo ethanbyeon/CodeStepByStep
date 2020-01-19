@@ -7,8 +7,6 @@ class isAllVowels {
     }
 
     static boolean allVowels(String s) {
-        
-        boolean bool = false;
 
         int check = 0;
         for(int i = 0; i < s.length(); i++){
