@@ -1,10 +1,10 @@
 import jdk.internal.agent.resources.agent_de;
 
-class collapse {
+class Collapse {
 
     public static void main(String[] args) {
 
-        int[] a = {1,2,3,4,5,6,7};
+        int[] a = {1, 2, 3, 4, 5, 6, 7};
         collapse(a);
 
     }
