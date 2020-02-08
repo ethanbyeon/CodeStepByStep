@@ -1,15 +1,15 @@
 import jdk.internal.agent.resources.agent_de;
 
-class Collapse {
+class collapse {
 
     public static void main(String[] args) {
 
         int[] a = {1, 2, 3, 4, 5, 6, 7};
-        collapse(a);
+        Collapse(a);
 
     }
 
-    static int[] collapse(int[] list) {
+    static int[] Collapse(int[] list) {
 
         String sum = "";
 
