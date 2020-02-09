@@ -1,4 +1,3 @@
-package Java.Arrays;
 
 class banish {
 
