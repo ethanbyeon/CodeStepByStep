@@ -4,7 +4,7 @@ class computeAverage {
     public static void main(String[] args) {
 
         int[] list = {1, -2, 4, -4, 9, -6, 16, -8, 25, -10};
-        ComputeAverage(list);
+        System.out.println(ComputeAverage(list));
 
     }
 

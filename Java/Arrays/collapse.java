@@ -1,4 +1,3 @@
-import jdk.internal.agent.resources.agent_de;
 
 class collapse {
 
